@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #3b2f2f, #1f1a1a);
+  font-family: 'Special Elite', monospace;
+  color: #f4e2c6;
+
+  /* Removed flex centering to allow natural flow */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.container {
+  text-align: center;
+  padding: 40px;
+  border: 2px solid #a67c52;
+  border-radius: 12px;
+  background-color: #2a1d1d;
+  box-shadow: 0 0 25px #000;
+  max-width: 1000px;      /* Increased max-width for your layout */
+  width: 90%;
+  max-height: 90vh;       /* Limit height to viewport */
+  overflow-y: auto;       /* Enable vertical scrolling */
+  margin: 20px auto;      /* Vertical margin to avoid sticking to edges */
+  box-sizing: border-box; /* Ensure padding and border included in size */
+}
+
+.title {
+  font-size: 3em;
+  margin-bottom: 30px;
+  color: #deb887;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.connect-btn {
+  background-color: #deb887;
+  color: #1f1a1a;
+  padding: 14px 28px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #000;
+  transition: background-color 0.2s ease;
+}
+
+.connect-btn:hover {
+  background-color: #cfa56f;
+}
+
+.connected {
+  font-size: 1.2em;
+  color: #fff2cc;
+  margin-top: 20px;
+}
+
+.video-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nft-border-western {
+  border-width: 4px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    45deg,
+    #d6a74a,
+    #a36e0a,
+    #d6a74a,
+    #a36e0a,
+    #d6a74a
+  );
+  box-shadow: 0 0 10px #d6a74a88;
+  position: relative;
+  padding: 1rem;
+  background-color: #2d2d2d;
+  border-radius: 0.5rem; /* rounded corners */
+  transition: transform 0.2s ease-in-out;
+}
+
+.nft-border-western:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #f7da7dcc;
+}
+
+.nft-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.375rem; /* rounded-md */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nft-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
